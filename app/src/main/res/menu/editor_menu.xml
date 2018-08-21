@@ -5,6 +5,12 @@
     tools:context=".EditorActivity">
 
     <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/delete_bl"
+        android:title="@string/delete"
+        app:showAsAction="always"/>
+
+    <item
         android:id="@+id/action_save"
         android:icon="@drawable/icon_done"
         android:title="@string/save"

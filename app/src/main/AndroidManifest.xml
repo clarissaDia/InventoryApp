@@ -16,7 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditorActivity" />
+        <activity android:name=".EditorActivity"
+            android:parentActivityName=".CatalogActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".CatalogActivity"/>
+        </activity>
+        <provider
+            android:authorities="com.example.android.inventoryapp"
+            android:name=".Data.StorageProvider"
+            android:exported="false">
+        </provider>
     </application>
 
 </manifest>

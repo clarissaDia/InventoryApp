@@ -4,36 +4,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginLeft="@dimen/ten"
+    android:layout_marginRight="@dimen/ten"
     tools:context=".EditorActivity">
 
     <EditText
         android:id="@+id/edit_product"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Product" />
+        android:hint="@string/hint_product" />
 
     <EditText
         android:id="@+id/edit_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Price" />
+        android:hint="@string/hint_price" />
 
-    <EditText
-        android:id="@+id/edit_quantity"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Quantity" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="@dimen/thirty_seven"
+            android:layout_height="@dimen/thirty_seven"
+            android:layout_alignParentRight="true"
+            android:text="@string/increment"
+            android:background="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edit_quantity"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_quantity"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="@dimen/thirty_seven"
+            android:layout_height="@dimen/thirty_seven"
+            android:layout_alignParentTop="true"
+            android:text="@string/decrement"
+            android:background="#8D6E63"/>
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/edit_supplier_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Supplier Name" />
+        android:hint="@string/hint_supplier_name" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fifteen">
 
     <EditText
         android:id="@+id/edit_supplier_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Supplier Phone" />
+        android:hint="@string/hint_supplier_phone" />
+
+    <Button
+        android:id="@+id/phone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thirty_six"
+        android:layout_alignParentRight="true"
+        android:text="@string/call"
+        android:background="#8D6E63"/>
+
+</RelativeLayout>
 
 </LinearLayout>

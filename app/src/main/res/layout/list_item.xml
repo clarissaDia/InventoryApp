@@ -34,11 +34,12 @@
         android:textAppearance="?android:textAppearanceMedium" />
 
 </LinearLayout>
-
     <Button
         android:id="@+id/sale_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:layout_marginTop="@dimen/twenty"
         android:layout_marginRight="@dimen/sixteen"
         android:text="@string/sell"

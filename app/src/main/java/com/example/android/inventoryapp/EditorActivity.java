@@ -115,6 +115,8 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 startActivity(intent);
             }
         });
+
+
     }
 
     private void saveProduct(){
@@ -124,7 +126,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         String supplierNameString = mSupplierNameEditText.getText().toString().trim();
         String supplierPhoneString = mSupplierPhoneEditText.getText().toString().trim();
 
-        if(mCurrentProductUri == null && TextUtils.isEmpty(productString) || TextUtils.isEmpty(priceString) || TextUtils.isEmpty(quantityString)
+        if(TextUtils.isEmpty(productString) || TextUtils.isEmpty(priceString) || TextUtils.isEmpty(quantityString)
                 || TextUtils.isEmpty(supplierNameString) || TextUtils.isEmpty(supplierPhoneString)){
             Toast.makeText(this, R.string.fill_in,Toast.LENGTH_SHORT).show();
             return;

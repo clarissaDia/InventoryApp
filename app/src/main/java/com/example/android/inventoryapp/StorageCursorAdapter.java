@@ -34,7 +34,6 @@ public class StorageCursorAdapter extends CursorAdapter{
         TextView quantityTextView = (TextView) view.findViewById(R.id.quantity);
         Button saleButton = (Button) view.findViewById(R.id.sale_button);
 
-
         int productColumnIndex = cursor.getColumnIndex(StorageEntry.COLUMN_PRODUCT_NAME);
         int priceColumnIndex = cursor.getColumnIndex(StorageEntry.COLUMN_PRICE);
         int quantityColumnIndex = cursor.getColumnIndex(StorageEntry.COLUMN_QUANTITY);

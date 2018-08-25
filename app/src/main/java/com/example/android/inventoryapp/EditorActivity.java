@@ -115,8 +115,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 startActivity(intent);
             }
         });
-
-
     }
 
     private void saveProduct(){
@@ -222,12 +220,10 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 finish();
-
             }
         };
 
         showUnsavedChangesDialog(discardButtonClickListener);
-
     }
 
     @Override
